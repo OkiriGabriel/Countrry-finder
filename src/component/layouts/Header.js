@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {}from 'react'
 
 const Header = () => {
     return (
@@ -6,11 +6,13 @@ const Header = () => {
             
       <header>
         <div className="container">
-          <h1>Where in the world?</h1>
+        
+          <h1>Search Your Movies   <i className="fas fa-compact-disc" /> </h1>
           <button className="btn-toggle" id="toggle">
-            <i className="far fa-moon" />
-            <i className="fas fa-moon" />
-            Dark Mode
+            <i className="far fa-spin" />
+      
+            About
+            <i className="far fa-spin" />
           </button>
         </div>
       </header>

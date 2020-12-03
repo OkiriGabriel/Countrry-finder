@@ -24,12 +24,15 @@
 
 .brand-cp-overlay {
   background-color: rgba(46, 46, 48, 0.65);
+  height: 100vh;
 }
 .brand-co-overlay {
   background-color: rgba(255, 103, 37, 0.65);
 }
 body {
-  background-color: var(--background);
+background-image: url('../src/component/imgs/NET.jpg');
+background-repeat: no-repeat;
+background-size: cover;
   color: var(--text);
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
@@ -87,6 +90,9 @@ img {
 h1 {
   margin: 0;
   font-size: 1.5rem;
+}
+.fs-35{
+  font-size:35px !important;
 }
 .btn-toggle {
   background-color: var(--element-bg);
@@ -212,6 +218,7 @@ body.dark .btn-toggle .far {
   margin: 30px 10px;
   max-width: 100%;
   width: 16rem;
+  padding-bottom: 10px;
 }
 .card .img-wrapper {
   height: 10.5rem;
@@ -241,6 +248,13 @@ body.dark .btn-toggle .far {
 .card .card-body p small {
   font-weight: 600;
 }
+.prdr{
+padding-left: 10px;
+}
+.prd{
+  padding-left: 10px;
+  padding-bottom: 25px !important;
+  }
 .modal {
   background-color: var(--background);
   display: none;
@@ -317,6 +331,15 @@ body.dark .btn-toggle .far {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 784px) {
+  body {
+    background-image: url('../src/component/imgs/NET.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+      color: var(--text);
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
   header .container {
     padding: 1.5rem 1rem;
   }
@@ -360,9 +383,26 @@ body.dark .btn-toggle .far {
   .modal .wrapper-body div:first-child {
     margin-right: 0rem;
   }
+  .card {
+    border-radius: 6px;
+    background-color: var(--element-bg);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    margin: 30px 10px;
+    max-width: 100%;
+    width: 16rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 420px) {
+ 
   .container {
     padding: 2.5rem 0;
+    justify-content: center;
+    align-items: center;
   }
 }

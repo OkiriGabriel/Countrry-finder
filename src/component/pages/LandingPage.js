@@ -13,7 +13,7 @@ const LandingPage = () => {
         <div   className='bg brand-cp-overlay'
         >
 <Header />
-<Search />
+<SearchBar />
         <div className="modal" id="modal">
           <div className="container">
             <button className="btn-back" id="back">
