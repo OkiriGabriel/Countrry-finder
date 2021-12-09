@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Card from './Card'
 
 function CardList ({results}) {
@@ -8,9 +9,11 @@ function CardList ({results}) {
     }
     return (
         <div className='container'>
-            {data.map((item) => (
-                <Card key={item.imdbID} movie={item} />
-            ))}
+            <Link>
+                {data.map((item) => (
+                    <Card key={item.imdbID} movie={item} />
+                ))}
+            </Link>
         </div>
     )
 }

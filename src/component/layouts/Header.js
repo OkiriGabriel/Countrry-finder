@@ -1,4 +1,5 @@
-import React, {}from 'react'
+import React, {}from 'react';
+import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -8,12 +9,12 @@ const Header = () => {
         <div className="container">
         
           <h1>Search Your Movies   <i className="fas fa-compact-disc" /> </h1>
-          <button className="btn-toggle" id="toggle">
+          <Link to="" className="btn-toggle" id="toggle">
             <i className="far fa-spin" />
       
             About
             <i className="far fa-spin" />
-          </button>
+          </Link>
         </div>
       </header>
         </div>

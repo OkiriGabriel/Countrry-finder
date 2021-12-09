@@ -9,6 +9,7 @@ import Header from './component/layouts/Header'
 
 
 import MovieSource from './api/MovieSource'
+import About from './component/pages/About'
 
 import './App.css'
 
@@ -28,15 +29,11 @@ const App =()=> {
   return (
     <Fragment>
       <Router>
-      <div  className=''>
-        
-        <div   className=''
-        >
+  
           <Header />
           <SearchBar onSearch={onSearch} />
           <CardList results={state.results} />
-      </div>
-      </div>
+ 
       </Router>
       </Fragment>
   );
